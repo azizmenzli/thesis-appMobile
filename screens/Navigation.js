@@ -4,7 +4,7 @@ import { StyleSheet, Pressable, Text, Modal, View, Button, LogoTitle, RefreshCon
 
 
 import FirstPage from "./HomeScreen";
-import SecondPage from "./students/ItntoPage";
+import SecondPage from "./students/studentRegister";
 import ThirdPage from "./students/ThirdPage";
 
 import OnerView from './OunerView/OnerView'
@@ -27,24 +27,24 @@ export default function navigation({ }) {
                 <Stack.Screen
                     name="FirstPage"
                     component={FirstPage}
-                    options={{
-                        title: 'rootsIt', //Set Header Title
-                        headerStyle: {
-                            backgroundColor: '#833471', //Set Header color
-                        },
-                        headerTintColor: '#F0FFF', //Set Header text color
-                        // headerTitleStyle: {
-                        //   fontWeight: 'bold', //Set Header text style
-                        // },
-                        // headerTitle: (props) => <LogoTitle {...props} />,
-                        headerRight: () => (
-                            <Button
-                                onPress={() => alert('This is a button!')}
-                                title="Info"
-                                color="#fff"
-                            />
-                        )
-                    }}
+                    // options={{
+                    //     title: 'rootsIt', //Set Header Title
+                    //     headerStyle: {
+                    //         backgroundColor: '#833471', //Set Header color
+                    //     },
+                    //     headerTintColor: '#F0FFF', //Set Header text color
+                    //     // headerTitleStyle: {
+                    //     //   fontWeight: 'bold', //Set Header text style
+                    //     // },
+                    //     // headerTitle: (props) => <LogoTitle {...props} />,
+                    //     headerRight: () => (
+                    //         <Button
+                    //             onPress={() => alert('This is a button!')}
+                    //             title="Info"
+                    //             color="#fff"
+                    //         />
+                    //     )
+                    // }}
 
                 />
 
@@ -69,46 +69,46 @@ export default function navigation({ }) {
                 <Stack.Screen
                     name="ThirdPage"
                     component={ThirdPage}
-                    options={{
-                        title: 'Third Page', //Set Header Title
-                        headerStyle: {
-                            backgroundColor: '#f4511e', //Set Header color
-                        },
-                        headerTintColor: '#fff', //Set Header text color
-                        headerTitleStyle: {
-                            fontWeight: 'bold', //Set Header text style
-                        },
-                    }}
+                    // options={{
+                    //     title: 'Third Page', //Set Header Title
+                    //     headerStyle: {
+                    //         backgroundColor: '#f4511e', //Set Header color
+                    //     },
+                    //     headerTintColor: '#fff', //Set Header text color
+                    //     headerTitleStyle: {
+                    //         fontWeight: 'bold', //Set Header text style
+                    //     },
+                    // }}
                 />
                 <Stack.Screen
                     name="OwnerLoginForm"
                     component={OwnerLoginForm}
-                    options={{
-                        title: "Login ",
-                        headerStyle: {
-                            backgroundColor: "#077871",
-                        },
-                        headerTintColor: "#fff",
-                        headerTitleAlign: "center",
-                        headerTitleStyle: {
-                            fontWeight: "bold",
-                        },
-                    }}
+                    // options={{
+                    //     title: "Login ",
+                    //     headerStyle: {
+                    //         backgroundColor: "#077871",
+                    //     },
+                    //     headerTintColor: "#fff",
+                    //     headerTitleAlign: "center",
+                    //     headerTitleStyle: {
+                    //         fontWeight: "bold",
+                    //     },
+                    // }}
 
                 />
                 <Stack.Screen
                     name="OwnerRegistration"
-                    options={{
-                        title: "Registration ",
-                        headerStyle: {
-                            backgroundColor: "#077871",
-                        },
-                        headerTintColor: "#fff",
-                        headerTitleAlign: "center",
-                        headerTitleStyle: {
-                            fontWeight: "bold",
-                        },
-                    }}
+                    // options={{
+                    //     title: "Registration ",
+                    //     headerStyle: {
+                    //         backgroundColor: "#077871",
+                    //     },
+                    //     headerTintColor: "#fff",
+                    //     headerTitleAlign: "center",
+                    //     headerTitleStyle: {
+                    //         fontWeight: "bold",
+                    //     },
+                    // }}
                     component={OwnerRegistration}
                 />
 
